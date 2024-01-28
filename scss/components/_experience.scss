@@ -1,0 +1,8 @@
+@use '../util' as u;
+
+.experience {
+    text-align: center;
+    @media (width >= u.rem(1110)) {
+        text-align: unset;
+    }
+}

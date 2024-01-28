@@ -1,0 +1,116 @@
+@use "../util" as u;
+
+.header {
+  position: relative;
+  margin-bottom: u.rem(60);
+  max-height: 100vh;
+  @media (width >= u.rem(768)) {
+    margin-inline: auto 0;
+    margin-bottom: u.rem(90);
+  }
+  @media (width >= u.rem(1024)) {
+    margin-inline: auto;
+    margin-bottom: u.rem(150);
+  }
+  &__nav {
+    @media (width >= u.rem(768)) {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+    }
+  }
+  &__picture {
+    width: 200px;
+    margin: auto;
+    background-image: linear-gradient(
+      rgba(lighten(#141415, 5%), 0.1),
+      rgba(lighten(#141415, 10%), 0.8)
+    );
+    @media (width >= u.rem(768)) {
+      width: 46vw;
+      margin: 0;
+      // width: 350px;
+      background-image: linear-gradient(
+        rgba(lighten(#141415, 5%), 0.8),
+        rgba(lighten(#141415, 10%), 0.8)
+      );
+    }
+    @media (width >= u.rem(1024)) {
+      width: calc(46vw - u.rem(32));
+      max-width: 500px;
+    }
+  }
+  &__img {
+    // max-width: calc(100vh - 60%);
+    filter: grayscale(100%);
+    margin: auto;
+    margin-top: u.rem(50);
+  }
+  .socials {
+    padding-top: u.rem(10);
+    @media (width >= u.rem(768)) {
+      width: 55%;
+      margin-left: auto;
+      padding-top: u.rem(24);
+    }
+    @media (width >= u.rem(1024)) {
+      padding-top: u.rem(27);
+    }
+  }
+  &__description {
+    text-align: center;
+    h1 {
+      font-size: u.rem(36);
+      margin-top: u.rem(30);
+    }
+    p {
+      font-weight: 400;
+      opacity: 0.8;
+      margin-top: u.rem(20);
+    }
+    @media (width >= u.rem(768)) {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      margin-top: u.rem(50);
+      text-align: left;
+      h1 {
+        font-size: u.rem(65);
+        font-size: clamp(
+          u.rem(65),
+          2.3482142857142856rem + 3.571428571428571vw,
+          u.rem(89)
+        );
+        // font-size: u.rem(74);
+        font-weight: 700;
+        max-width: 60%;
+      }
+
+      p {
+        width: 55%;
+        margin-top: u.rem(36);
+        font-size: 1rem;
+        font-size: clamp(
+          u.rem(16),
+          0.9559859154929577rem + 0.18779342723004694vw,
+          u.rem(18)
+        );
+      }
+
+      .btn-link {
+        margin-bottom: u.rem(36);
+      }
+    }
+    @media (width >= u.rem(1024)) {
+      // margin-top: u.rem(-550);
+      h1 {
+        max-width: 65%;
+      }
+      p {
+        width: 36.5%;
+        margin-top: u.rem(36);
+      }
+    }
+  }
+}
