@@ -17,6 +17,12 @@
       display: flex;
       justify-content: space-between;
       align-items: start;
+      .logo {
+        img {
+          display: inline;
+          z-index: 9;
+        }
+      }
     }
   }
   &__picture {

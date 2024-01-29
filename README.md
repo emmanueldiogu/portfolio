@@ -1,6 +1,6 @@
 # My portfolio page
 
-**Design Idea:** Frontend Mentor
+**Design Idea:** [Frontend Mentor](https://drive.google.com/drive/folders/1__7hAuHMaB4_iSxBkZTjRWQFpX6oSRHo?usp=sharing)
 
 
 
@@ -23,7 +23,7 @@ connectaddress=(wsl hostname -I)
 - To list port proxy `netsh interface portproxy show all`
 
 
-## Deply Vite app to Netlify
+## Deploy Vite app to Netlify
 
 - Install Netlify globally id not already installed `npm install netlify-cli -g`
 - Initialize netlify in your project `netlify init`

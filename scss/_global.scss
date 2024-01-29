@@ -83,6 +83,11 @@ hr {
     @media (width >= u.rem(1024)) {
         font-size: u.rem(32);
     }
+    img {
+        display: inline-block;
+        width: u.rem(74);
+        max-width: u.rem(94);
+    }
 }
 
 .socials {
