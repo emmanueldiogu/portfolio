@@ -36,3 +36,4 @@ connectaddress=(wsl hostname -I)
 - npm install
 - npm run dev
 - Add `-- host` to the end of vite in the dev mode for script@package.json
+- Install sass `npm i sass -D`
