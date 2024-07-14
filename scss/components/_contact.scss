@@ -11,8 +11,10 @@
     max-width: 100%;
   }
   .container {
-    display: flex;
-    column-gap: 2rem;
+    @media (width >= u.rem(1024)) {
+      display: flex;
+      column-gap: 2rem;
+    }
   }
   &__left {
     flex: 1;
