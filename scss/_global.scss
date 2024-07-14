@@ -31,6 +31,8 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  transition: all 0.8s ease;
   font-size: 100%;
   box-sizing: border-box;
 }
@@ -75,7 +77,6 @@ img {
 
 section,
 #contact {
-  scroll-behavior: smooth;
   transition: all 0.8s ease;
   .section__header {
     margin-top: 4.5rem;
