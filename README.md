@@ -1,11 +1,4 @@
-# [My portfolio page](https://emmanueldiogu.netlify.app/)
-
-**Design Idea:** Frontend Mentor
-
-
-
-
-
+# [My portfolio page](https://emmanueldiogu.xyz)
 
 ## How to access services Running inside WSL 2 from other devices in your LAN
 
@@ -36,4 +29,3 @@ connectaddress=(wsl hostname -I)
 - npm install
 - npm run dev
 - Add `-- host` to the end of vite in the dev mode for script@package.json
-- Install sass `npm i sass -D`

@@ -1,6 +1,8 @@
 @use "util" as u;
 
 :root {
+  --new-d: #02050a;
+  --new-d-2: #09101a;
   --light: #d8dbe0;
   --dark: #141415;
   --c-white: #fffdfa;
@@ -8,7 +10,8 @@
   --c-gray: #5e607a;
   --c-red: #f15d51;
   --c-silver: #c5c6ce;
-  --c-green: #5ad8a1;
+  --c-green: #55e6a5;
+  --c-green-hover: #5ad8a1;
   --f-xl: clamp(
     u.rem(40),
     2.147887323943662rem + 1.5023474178403755vw,
