@@ -19,7 +19,7 @@
     <div class="flex">
       <header
         data-header=""
-        class="fixed flex flex-col min-h-dvh min-w-fit bg-white dark:bg-slate-950 text-zinc-950 dark:text-white transition z-10 overflow-hidden lg:w-[299px] xxl:w-[369px] border-e-2 dark:border-emerald-300/20 px-4 lg:px-0"
+        class="lg:flex fixed flex flex-col min-h-dvh min-w-fit bg-white dark:bg-slate-950 text-zinc-950 dark:text-white transition z-10 overflow-hidden lg:w-[299px] xxl:w-[369px] border-e-2 dark:border-emerald-300/20 px-4 lg:px-0"
       >
         <div class="flex lg:collapse justify-between pt-4 lg:p-0">
           <button data-hamburger-toggle class="">
@@ -53,6 +53,7 @@
                 >
               </li>
               <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#qualification">Qualification</a></li>
               <li><a href="#expereinces">Experiences</a></li>
@@ -81,9 +82,10 @@
         data-main=""
         class="overflow-y-auto w-full lg:ml-[299px] xxl:ml-[369px]"
       >
+        <!-- Hero section start -->
         <section
           id="home"
-          class="bg-slate-100 dark:bg-inherit lg:px-5 xxl:px-20 target:bg-red-200"
+          class="bg-slate-50 dark:bg-slate-900 lg:px-5 xxl:px-20"
         >
           <div class="container mx-auto px-5 xxl:py-24 lg:px-0">
             <div
@@ -120,7 +122,7 @@
                     type="button"
                     class="text-emerald-300 bg-slate-950 hover:text-emerald-300 border border-slate-950 hover:bg-transparent hover:border-emerald-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-10 py-5 text-center me-2 mb-2 dark:text-zinc-950 dark:bg-emerald-300 dark:border-emerald-300 dark:hover:bg-transparent dark:hover:text-white"
                   >
-                    Download CV
+                    Download CV <i class="fa-solid fa-download"></i>
                   </button>
                   <button
                     class="text-emerald-300 hover:text-white border border-emerald-300 hover:bg-slate-950 hover:border-slate-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-10 py-5 text-center me-2 mb-2 dark:text-emerald-300 dark:bg-transparent dark:border-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-slate-950"
@@ -143,11 +145,15 @@
             </div>
           </div>
         </section>
+        <!-- Hero section end -->
+        <!-- About section start -->
         <section id="about" class="lg:px-5 xxl:px-20">
           <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
-            <h2 class="text-clamp-h3 font-bold mb-10">
-              <span>About Me</span>
-              <span></span>
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - About
+              </span>
+              <span>About me!</span>
             </h2>
             <div class="flex flex-col lg:flex-row gap-20 items-center">
               <div class="max-h-[200px]:">
@@ -192,23 +198,296 @@
                 <div>
                   <a
                     href="#contact"
-                    class="bg-slate-950 text-white hover:bg-slate-950/85 py-4 px-10"
-                    >Got a project?</a
+                    class="bg-slate-950 dark:bg-emerald-300 text-white dark:text-zinc-950 hover:bg-slate-950/85 dark:hover:bg-emerald-400 py-4 px-10"
+                    >Hire Me!</a
                   >
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="services" class="lg:px-5 xxl:px-20">Services</section>
+        <!-- About section end -->
+        <!-- Skills section start -->
+        <section
+          id="skills"
+          class="bg-emerald-50 dark:bg-slate-950 lg:px-5 xxl:px-20"
+        >
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase"
+                >- Skills</span
+              >
+              <span>My abilities</span>
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-blue-300 p-5">
+                <h3
+                  class="text-clamp-h6 font-semibold text-slate-500 text-center mb-3"
+                >
+                  Design Tools
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/illustrator-%2309090b?style=for-the-badge&logo=adobe%20illustrator"
+                      alt="Figma"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/adobe%20XD-%2309090b?style=for-the-badge&logo=adobe%20XD"
+                      alt="Adobe XD"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/after%20effect-%2309090b?style=for-the-badge&logo=adobe%20after%20effects"
+                      alt="Adobe After Effects"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/Photoshop-%2309090b?style=for-the-badge&logo=adobe%20photoshop"
+                      alt="PhotoShop"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="bg-red-300 p-5">
+                <h3
+                  class="text-clamp-h6 font-semibold text-slate-500 text-center mb-3"
+                >
+                  Languages
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/PHP-%2309090b?style=for-the-badge&logo=php"
+                      alt="PHP"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/javascript-%2309090b?style=for-the-badge&logo=javascript"
+                      alt="Javascript"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/html-%2309090b?style=for-the-badge&logo=html5"
+                      alt="HTML"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/css-%2309090b?style=for-the-badge&logo=css3"
+                      alt="CSS"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/python-%2309090b?style=for-the-badge&logo=python"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/java-%2309090b?style=for-the-badge&logo=openjdk"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/sass-%2309090b?style=for-the-badge&logo=sass"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/typescript-%2309090b?style=for-the-badge&logo=typescript"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="bg-green-300 p-5">
+                <h3
+                  class="text-clamp-h6 font-semibold text-slate-500 text-center mb-3"
+                >
+                  Frameworks/Libraries
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/django-%2309090b?style=for-the-badge&logo=django"
+                      alt="Django"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/bootstrap-%2309090b?style=for-the-badge&logo=bootstrap"
+                      alt="Bootstrap"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/chart.js-%2309090b?style=for-the-badge&logo=chartdotjs"
+                      alt="Adobe After Effects"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/express.js-%2309090b?style=for-the-badge&logo=express"
+                      alt="Express js"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/jquery-%2309090b?style=for-the-badge&logo=jquery"
+                      alt="jQuery"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/react-%2309090b?style=for-the-badge&logo=react"
+                      alt="React js"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/next.js-%2309090b?style=for-the-badge&logo=next.js"
+                      alt="Next js"
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src="https://img.shields.io/badge/tailwind%20css-%2309090b?style=for-the-badge&logo=tailwind%20css"
+                      alt="Tailwind CSS js"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="bg-violet-300 p-5">
+                <h3
+                  class="text-clamp-h6 font-semibold text-slate-500 text-center mb-3"
+                >
+                  Database, Hosting
+                </h3>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/aws-%2309090b?style=for-the-badge&logo=amazon-web-services"
+                      alt="AWS"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/netlify-%2309090b?style=for-the-badge&logo=netlify"
+                      alt="netlify"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/firebase-%2309090b?style=for-the-badge&logo=firebase"
+                      alt="firebase"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/github-%2309090b?style=for-the-badge&logo=github"
+                      alt="github"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/sqlite-%2309090b?style=for-the-badge&logo=sqlite"
+                      alt="sqlite"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/mysql-%2309090b?style=for-the-badge&logo=mysql"
+                      alt="mysql"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/mongodb-%2309090b?style=for-the-badge&logo=mongodb"
+                      alt="mongodb"
+                    />
+                  </div>
+                  <div class="">
+                    <img
+                      src="https://img.shields.io/badge/postgresql-%2309090b?style=for-the-badge&logo=postgresql"
+                      alt="postgresql"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Skills section end -->
+        <!-- Services section start -->
+        <section id="services" class="lg:px-5 xxl:px-20">
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - Services
+              </span>
+              <span>What I offer</span>
+            </h2>
+          </div>
+        </section>
+        <!-- Services section end -->
+        <!-- Qualifications section start -->
         <section id="qualification" class="lg:px-5 xxl:px-20">
-          Qualifications
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - Qualifications
+              </span>
+              <span>My Certifications</span>
+            </h2>
+          </div>
         </section>
+        <!-- Qualifications section end -->
+        <!-- Experiences section start -->
         <section id="expereinces" class="lg:px-5 xxl:px-20">
-          Experiences
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - Experiences
+              </span>
+              <span>Years of working!</span>
+            </h2>
+          </div>
         </section>
-        <section id="portfolio" class="lg:px-5 xxl:px-20">Portfolio</section>
-        <section id="contact" class="lg:px-5 xxl:px-20">Contact</section>
+        <!-- Experiences section end -->
+        <!-- Portfolio section start -->
+        <section id="portfolio" class="lg:px-5 xxl:px-20">
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - Portfolio
+              </span>
+              <span>My recent projects!</span>
+            </h2>
+          </div>
+        </section>
+        <!-- Portfolio section end -->
+        <!-- Contact section start -->
+        <section id="contact" class="lg:px-5 xxl:px-20">
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h4 font-bold mb-10">
+              <span class="block text-base font-normal uppercase">
+                - Contact
+              </span>
+              <span>Get in touch!</span>
+            </h2>
+          </div>
+        </section>
+        <!-- Contact section end -->
       </main>
     </div>
     <script type="module" src="/main.js"></script>

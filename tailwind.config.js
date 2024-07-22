@@ -9,6 +9,9 @@ module.exports = {
       lineHeight: {
         'full': '100%',
       },
+      boxShadow: {
+        'glass': '16px 16px 40px 0px rgba(0, 0, 0, 0.25)',
+      },
       fontSize: {
         'clamp-h1': 'clamp(2.027rem, 1.311rem + 3.583vw, 5.61rem)',
         'clamp-h2': 'clamp(1.802rem, 1.32rem + 2.407vw, 4.209rem)',
