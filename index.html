@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,8 +13,204 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <body
+    class="min-h-dvh bg-white dark:bg-zinc-950 text-zinc-950 dark:text-white"
+  >
+    <div class="flex">
+      <header
+        data-header=""
+        class="hidden lg:block fixed flex flex-col min-h-dvh min-w-fit bg-white dark:bg-slate-950 text-zinc-950 dark:text-white transition z-10 overflow-hidden lg:w-[299px] xxl:w-[369px] border-e-2 dark:border-emerald-300/20 px-4 lg:px-0"
+      >
+        <div class="flex lg:collapse justify-between pt-4 lg:p-0">
+          <button data-hamburger-toggle class="">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img
+            src="/img/em-light.png"
+            alt="site logo"
+            class="w-8 hidden dark:block"
+          />
+          <img
+            src="/img/em-dark.png"
+            alt="site logo"
+            class="w-8 block dark:hidden"
+          />
+          <button data-hamburger-toggle class="hidden">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div
+          class="flex flex-col flex-1 min-h-full justify-between text-center w-full m-auto ms-0 me-0 py-14 md:py-16"
+        >
+          <div>EmmanuelDiogu</div>
+          <nav>
+            <ul class="flex flex-col gap-4 text-lg">
+              <li>
+                <a
+                  href="#home"
+                  class="active:text-emerald-600 focus:text-red-600"
+                  >Home</a
+                >
+              </li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#qualification">Qualification</a></li>
+              <li><a href="#expereinces">Experiences</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <div class="flex justify-center items-center gap-4">
+              <a class="block" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a class="block" href="#"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a class="block" href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="text-sm">
+              Copyright © 2024 EMDiogu. <br />
+              All rights reserved to EMDiogu.
+            </div>
+          </div>
+        </div>
+      </header>
+      <main
+        data-main=""
+        class="overflow-y-auto w-full lg:ml-[299px] xxl:ml-[369px]"
+      >
+        <section
+          id="home"
+          class="bg-slate-100 dark:bg-inherit lg:px-5 xxl:px-20 target:bg-red-200"
+        >
+          <div class="container mx-auto px-5 xxl:py-24 lg:px-0">
+            <div
+              class="flex flex-col lg:flex-row-reverse h-full w-full justify-between items-center gap-10 py-10"
+            >
+              <div class="">
+                <div>
+                  <img
+                    src="/img/emmanuel-photo.png"
+                    width="545"
+                    height="621"
+                    alt="Emmanuel Diogu"
+                    class="grayscale-[75%]"
+                  />
+                </div>
+              </div>
+              <div class="lg:w-1/2">
+                <h1 class="text-clamp-h2 font-bold mb-10 leading-full">
+                  <span class="block lg:-mr-24"
+                    >Hi, I'm
+                    <span class="text-emerald-300">Emmanuel!</span></span
+                  >
+                  <span class="block lg:-mr-24">Fullstack Developer</span>
+                  <span class="block lg:-mr-24">Based in Toronto</span>
+                </h1>
+                <p class="mb-10 lg:w-2/3">
+                  I have <span>5+ years</span> of experience in developing
+                  accessible web applications that delights users.
+                </p>
+                <div
+                  class="flex justify-between md:justify-start md:gap-5 mb-10"
+                >
+                  <button
+                    type="button"
+                    class="text-emerald-300 bg-slate-950 hover:text-emerald-300 border border-slate-950 hover:bg-transparent hover:border-emerald-300 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-10 py-5 text-center me-2 mb-2 dark:text-zinc-950 dark:bg-emerald-300 dark:border-emerald-300 dark:hover:bg-transparent dark:hover:text-white"
+                  >
+                    Download CV
+                  </button>
+                  <button
+                    class="text-emerald-300 hover:text-white border border-emerald-300 hover:bg-slate-950 hover:border-slate-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-10 py-5 text-center me-2 mb-2 dark:text-emerald-300 dark:bg-transparent dark:border-emerald-300 dark:hover:bg-emerald-300 dark:hover:text-slate-950"
+                  >
+                    Contact Me
+                  </button>
+                </div>
+                <blockquote
+                  class="flex flex-col gap-2 p-4 my-4 border-s-4 border-orange-300 dark:border-yellow-300"
+                >
+                  <p><a href="tel:+14375564118">+1 (437) 556-4118</a></p>
+                  <p>
+                    <a href="mailto:emmanueldiogu+xyz@gmail.com"
+                      >emmanueldiogu+xyz@gmail.com</a
+                    >
+                  </p>
+                  <address>Scarborough, Ontario, Canada</address>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="lg:px-5 xxl:px-20">
+          <div class="container mx-auto px-5 py-20 xxl:py-24 lg:px-0">
+            <h2 class="text-clamp-h3 font-bold mb-10">
+              <span>About Me</span>
+              <span></span>
+            </h2>
+            <div class="flex flex-col lg:flex-row gap-20 items-center">
+              <div class="max-h-[200px]:">
+                <img src="/img/emma.png" alt="Emmanuel Diogu" />
+              </div>
+              <div class="flex flex-col gap-10">
+                <div class="flex flex-col md:flex-row gap-4">
+                  <div
+                    class="flex flex-col justify-between gap-2 lg:gap-4 text-center bg-slate-200 dark:bg-slate-950 shadow-sm shadow-slate-200/20 lg:aspect-square p-5 rounded-xl"
+                  >
+                    <i
+                      class="fa-solid fa-award fa-xl leading-none text-slate-400 dark:text-slate-500"
+                    ></i>
+                    <h4 class="font-semibold leading-none">Experience</h4>
+                    <p class="font-light">7 Years Working</p>
+                  </div>
+                  <div
+                    class="flex flex-col justify-between gap-2 lg:gap-4 text-center bg-slate-200 dark:bg-slate-950 shadow-sm shadow-slate-200/20 lg:aspect-square p-5 rounded-xl"
+                  >
+                    <i
+                      class="fa-solid fa-briefcase fa-xl leading-none text-slate-400 dark:text-slate-500"
+                    ></i>
+                    <h4 class="font-semibold leading-none">Completed</h4>
+                    <p class="font-light">30+ Projects</p>
+                  </div>
+                  <div
+                    class="flex flex-col justify-between gap-2 lg:gap-4 text-center bg-slate-200 dark:bg-slate-950 shadow-sm shadow-slate-200/20 lg:aspect-square p-5 rounded-xl"
+                  >
+                    <i
+                      class="fa-solid fa-headphones fa-xl leading-none text-slate-400 dark:text-slate-500"
+                    ></i>
+                    <h4 class="font-semibold leading-none">Support</h4>
+                    <p class="font-light">7 Years Working</p>
+                  </div>
+                </div>
+                <p>
+                  As a Fullstack Developer, I create dynamic web applications
+                  with a focus on both frontend and backend. My expertise in
+                  UI/UX design and robust backend solutions has consistently
+                  exceeded client expectations.
+                </p>
+                <div>
+                  <a
+                    href="#contact"
+                    class="bg-slate-950 text-white hover:bg-slate-950/85 py-4 px-10"
+                    >Got a project?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="services" class="lg:px-5 xxl:px-20">Services</section>
+        <section id="qualification" class="lg:px-5 xxl:px-20">
+          Qualifications
+        </section>
+        <section id="expereinces" class="lg:px-5 xxl:px-20">
+          Experiences
+        </section>
+        <section id="portfolio" class="lg:px-5 xxl:px-20">Portfolio</section>
+        <section id="contact" class="lg:px-5 xxl:px-20">Contact</section>
+      </main>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
