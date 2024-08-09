@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <script type="module">
+      import { auth } from "./js/firebase.config";
+      import { onAuthStateChanged } from "firebase/auth";
+
+      onAuthStateChanged(auth, (user) => {
+        if (!user) {
+          window.location.href = "/";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Welcome to admin <button id="authLogout">Logout</button></h1>
+    <form id="projectForm" class="space-y-4 h-dvh m-auto" style="width: 18rem">
+      <div
+        class="rounded border-s-4 border-green-500 bg-green-50 dark:bg-green-950 p-4 hidden"
+        role="alert"
+        data-alert="success"
+      >
+        Your message sent successfully
+      </div>
+      <div
+        class="rounded border-s-4 border-red-500 bg-red-50 dark:bg-red-950 p-4 hidden items-center"
+        role="alert"
+        data-alert="danger"
+      ></div>
+      <div>
+        <label class="sr-only" for="projectTitle">Project Title</label>
+        <input
+          class="w-full rounded-lg bg-transparent border-gray-200 p-3 text-sm"
+          placeholder="Project Title"
+          type="text"
+          id="projectTitle"
+          name="project_title"
+          required
+        />
+      </div>
+      <div>
+        <label class="sr-only" for="projectViewURL">Project View URL</label>
+        <input
+          class="w-full rounded-lg bg-transparent border-gray-200 p-3 text-sm"
+          placeholder="Project View URL"
+          type="url"
+          id="projectViewURL"
+          name="project_view_url"
+          required
+        />
+      </div>
+      <div>
+        <label class="sr-only" for="projectImage">Project Image</label>
+        <input
+          class="w-full rounded-lg bg-transparent border-gray-200 p-3 text-sm"
+          placeholder="Project Image"
+          type="text"
+          id="projectImage"
+          name="project_image"
+          required
+        />
+      </div>
+      <div>
+        <label class="sr-only" for="projectCodeURL">Project Code URL</label>
+        <input
+          class="w-full rounded-lg bg-transparent border-gray-200 p-3 text-sm"
+          placeholder="Project Code URL"
+          type="url"
+          id="projectCodeURL"
+          name="project_code_url"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="sr-only" for="projectDetails">Project Details</label>
+
+        <textarea
+          class="w-full rounded-lg bg-transparent border-gray-200 p-3 text-sm"
+          placeholder="project details"
+          rows="8"
+          id="projectDetails"
+          name="project_details"
+        ></textarea>
+      </div>
+
+      <div class="mt-4">
+        <button
+          type="submit"
+          class="bg-slate-950 dark:bg-emerald-300 text-white dark:text-zinc-950 hover:bg-slate-950/85 dark:hover:bg-emerald-400 py-4 px-10"
+        >
+          Add Project
+        </button>
+      </div>
+    </form>
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="./js/admin.js"></script>
+  </body>
+</html>
