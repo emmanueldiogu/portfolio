@@ -1,8 +1,8 @@
 import "./style.css";
 import "./main.css";
-import { app } from "./js/firebase.config";
+import { app } from "./public/js/firebase.config";
 import { getDatabase, ref, push, onValue } from "firebase/database";
-import "./js/auth";
+import "./public/js/auth";
 const db = getDatabase(app);
 
 const contactForm = document.querySelector("#contactForm");
